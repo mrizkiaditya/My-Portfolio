@@ -52,3 +52,7 @@ html {
 .app {
   background-color: #252734;
 }
+
+html, body {
+  overflow-x: hidden;
+}

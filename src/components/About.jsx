@@ -56,14 +56,14 @@ const About = () => {
                 <Card className="card_group mb-3 mx-2 shadow" style={{ width: "15rem" }}>
                   <Card.Body>
                     <UilBracketsCurly size={'60px'} />
-                    <Card.Title className="mt-2">Experiences in Web Development</Card.Title>
+                    <Card.Title className="mt-2">Experience in Web Development</Card.Title>
                     <Card.Text>1+ Years</Card.Text>
                   </Card.Body>
                 </Card>
                 <Card className="card_group mb-3 mx-2 shadow" style={{ width: "15rem" }}>
                   <Card.Body>
                     <UilPalette size={'60px'} />
-                    <Card.Title className="mt-2">Experiences in Graphic Design</Card.Title>
+                    <Card.Title className="mt-2">Experience in Graphic Design</Card.Title>
                     <Card.Text>1+ Years</Card.Text>
                   </Card.Body>
                 </Card>

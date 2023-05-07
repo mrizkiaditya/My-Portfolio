@@ -3,7 +3,9 @@
 }
 
 .navbar.active{
-  border-bottom : 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom : 2px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  backdrop-filter: blur(20px);
 }
 
 .navbar .title {
@@ -32,7 +34,8 @@
 
 #home .content h1 {
   color: white;
-  font-size: 32pt;
+  font-size: 28pt;
+  font-weight: bold;
 }
 
 #home .content h3 {
@@ -42,10 +45,13 @@
 
 #home .home {
   height: 700px;
+  
 }
 
 #home img {
   width: 350px;
+  border-radius: 50%;
+  border: 2px solid #fc4525;
 }
 
 #home Button {
@@ -54,11 +60,6 @@
 
 #home Button:hover {
   background-color: #d32507;
-}
-
-#home img {
-  border-radius: 50%;
-  border: 2px solid #fc4525;
 }
 
 #home .download{
@@ -83,16 +84,51 @@
   color: white;
 }
 
+@media only screen and (max-width: 991px ) and (min-width: 601px)  {
+  #home .content {
+    justify-content: center;
+  }
+  #home .content h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 26pt;
+  }
+  #home .content h3 {
+    text-align: center;
+  }
+  #home .download_text {
+    display: flex;
+    justify-content: center;
+  }
+  #home .socmed_group {
+    display: flex;
+    justify-content: center;
+  }
+  #home .socmed {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 1rem;
+  }
+  #home img {
+    width: 300px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #home {
     margin-top: 2rem;
   }
-  #home h1 {
+  #home .content {
+    justify-content: center;
+  }
+  #home .content h1 {
     text-align: center;
     margin-top: 20px;
+    font-size: 22pt;
   }
-  #home h3 {
+  #home .content h3 {
     text-align: center;
+    font-size: 16pt;
   }
   #home .download_text {
     display: flex;
@@ -145,14 +181,20 @@
   }
 }
 
-
 #skills {
   padding: 5rem 0;
 }
 
-#skills .skill_logo img {
-  width: 180px;
+#skills img {
+  width: 200px;
   margin-bottom: 1rem;
+  filter: grayscale(100);
+  opacity: 0.4;
+}
+
+#skills img:hover {
+  filter: grayscale(0);
+  opacity: 1;
 }
 
 #skills .title {
@@ -165,10 +207,21 @@
   font-weight: 700;
 }
 
-@media only screen and (max-width: 600px) {
-  #skills .skill_logo img {
+@media only screen and (max-width: 1399px) and (min-width: 768px) {
+  #skills img {
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #skills img {
     width: 130px;
-    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 519px) {
+  #skills img {
+    width: 110px;
   }
 }
 
@@ -183,7 +236,7 @@
 }
 
 #portfolio .title .link {
-  text-decoration: none;
+  text-decoration: underline;
   color: #fc4525;
   font-weight: 700;
 }
