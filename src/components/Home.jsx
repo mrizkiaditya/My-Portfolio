@@ -8,7 +8,7 @@ import { UilInstagram } from "@iconscout/react-unicons";
 import { UilLinkedin } from "@iconscout/react-unicons";
 import { UilWhatsapp } from "@iconscout/react-unicons";
 import { UilEnvelope } from "@iconscout/react-unicons";
-import resume from "../assets/Muhammad-Rizki-Aditya-resume.pdf";
+import resume from "../assets/mrizkiaditya-resume.pdf";
 import Typed from 'typed.js';
 
 const Home = () => {
